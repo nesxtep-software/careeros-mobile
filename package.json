@@ -1,0 +1,41 @@
+{
+  "name": "careeros-mobile",
+  "version": "1.0.0",
+  "description": "Mobile application for CareerOS career management platform",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "keywords": [
+    "career",
+    "mobile",
+    "react-native",
+    "expo"
+  ],
+  "author": "CareerOS",
+  "license": "MIT",
+  "devDependencies": {
+    "@nesxtep/austral": "link:../Austral"
+  },
+  "austral": {
+    "hooks": {
+      "maxFiles": 10
+    },
+    "quality": {
+      "coverage": {
+        "statements": 80,
+        "branches": 78,
+        "functions": 80,
+        "lines": 80
+      },
+      "eslint": {
+        "maxLines": 300,
+        "complexity": 10
+      }
+    }
+  },
+  "packageManager": "pnpm@11.5.2"
+}
